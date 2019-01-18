@@ -27,27 +27,37 @@
 button {
   display: block;
   margin: 20px auto;
-  padding: 2px 20px;
+  padding: 5px 20px;
   background-color: rgb(56, 51, 68);
+  color: white;
   color: rgba(255, 249, 245);
   font-family: "Righteous", cursive;
   font-size: 1.2em;
-  border: 8px solid rgb(56, 51, 68);
   border-radius: 5px;
   outline: none;
 }
 #container {
   margin: 0 auto;
-  width: 332px;
+  width: 240px;
   height: 660px;
   display: flex;
   flex-wrap: wrap;
 }
 img {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 5px;
   margin: 5px;
+}
+@media screen and (min-width: 424px) {
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  #container {
+    width: 332px;
+    height: 660px;
+  }
 }
 @media screen and (min-width: 724px) {
   #container {
